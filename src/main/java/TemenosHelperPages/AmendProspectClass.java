@@ -1,4 +1,4 @@
-package org.example;
+package TemenosHelperPages;
 
 public class AmendProspectClass {
 }

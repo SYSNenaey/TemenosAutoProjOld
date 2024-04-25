@@ -1,8 +1,8 @@
-package org.example;
+package TemenosHelperPages.AppAuth;
 
+import TemenosHelperPages.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginClass {
     private static WebDriver cdriver = WebDriverFactory.getDriver();

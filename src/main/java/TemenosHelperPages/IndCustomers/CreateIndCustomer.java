@@ -1,5 +1,6 @@
-package org.example;
+package TemenosHelperPages.IndCustomers;
 
+import TemenosHelperPages.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

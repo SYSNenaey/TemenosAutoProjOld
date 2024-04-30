@@ -21,4 +21,8 @@ public class HomeMenuNav {
 
     }
 
+    public static void MenuCreateCorp ()
+    {
+
+    }
 }

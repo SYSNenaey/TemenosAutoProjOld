@@ -1,10 +1,9 @@
-package TemenosTest.IndCustomers;
-import TemenosHelperPages.HomeMenuNav;
-import TemenosHelperPages.IndCustomers.CreateIndCustomer;
+package TemenosTest;
+import TemenosHelperPages.Customers.IndCustomer.AuthorizeIndCustomer;
+import TemenosHelperPages.MenuNav.HomeMenuNav;
+import TemenosHelperPages.Customers.IndCustomer.CreateIndCustomer;
 import TemenosHelperPages.AppAuth.LoginClass;
 import TemenosHelperPages.AppAuth.LogoutClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -12,13 +11,14 @@ import org.testng.annotations.BeforeMethod;
 public class TestCreateIndCustomer {
 
 
-    public static void Login() {
+    public static void main(String[] args) {
         LoginClass.login("INPUTT","123456");
         HomeMenuNav.MenuCreateIndCustomer();
-        //HomeMenuNav.MenuCreateCorp();
         CreateIndCustomer.CreateIndCustomer();
         LogoutClass.Logout();
         LoginClass.login("AUTHOR","1234567");
+        HomeMenuNav.MenuAuthorizeCustomer();
+        AuthorizeIndCustomer.AuthorizeIndCustomer();
     }
 
 }

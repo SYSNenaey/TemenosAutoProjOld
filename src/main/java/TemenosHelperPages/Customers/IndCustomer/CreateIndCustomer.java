@@ -1,4 +1,4 @@
-package TemenosHelperPages.IndCustomers;
+package TemenosHelperPages.Customers.IndCustomer;
 
 import TemenosHelperPages.WebDriverFactory;
 import org.openqa.selenium.By;
@@ -13,7 +13,9 @@ public class CreateIndCustomer {
 
     public static void CreateIndCustomer()
     {
-     cdriver.findElement(By.xpath("//*[@id=\"pane_\"]/ul[1]/li/ul/li[2]/ul/li[1]/a")).click();
+
+        // Open Ind Customer Link
+        cdriver.findElement(By.xpath("//*[@id=\"pane_\"]/ul[1]/li/ul/li[2]/ul/li[1]/a")).click();
         // Get all window handles
         Set<String> windowHandles = cdriver.getWindowHandles();
         String originalWindowHandle = cdriver.getWindowHandle();
@@ -27,12 +29,13 @@ public class CreateIndCustomer {
         Select titledropdown = new Select(titledropdownElement);
         // Select the option by visible text
         titledropdown.selectByVisibleText("Doctors");
-        cdriver.findElement(By.id("fieldName:GIVEN.NAMES")).sendKeys("andrew6");
-        cdriver.findElement(By.id("fieldName:NAME.1:1")).sendKeys("andrew6");
-        cdriver.findElement(By.id("fieldName:SHORT.NAME:1")).sendKeys("andrew6");
+        cdriver.findElement(By.id("fieldName:GIVEN.NAMES")).sendKeys("geber3");
+        cdriver.findElement(By.id("fieldName:NAME.1:1")).sendKeys("geber3");
+        cdriver.findElement(By.id("fieldName:SHORT.NAME:1")).sendKeys("geber3");
         cdriver.findElement(By.id("radio:tab1:GENDER")).click();
-        cdriver.findElement(By.id("fieldName:MNEMONIC")).sendKeys("A1258656576");
+        cdriver.findElement(By.id("fieldName:MNEMONIC")).sendKeys("A1258656566");
         cdriver.findElement(By.id("fieldName:SECTOR")).sendKeys("1001");
+        // Validate & Commit Buttons
         cdriver.findElement(By.xpath("//*[@id=\"goButton\"]/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td[2]/a/img")).click();
         cdriver.findElement(By.xpath("//*[@id=\"goButton\"]/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td[1]/a/img")).click();
         cdriver.close();

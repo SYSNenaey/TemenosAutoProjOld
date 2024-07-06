@@ -1,4 +1,4 @@
-package TemenosTest.IndCustomers;
+package TemenosTest;
 
 public class TestSearchIndCustomer {
 }
